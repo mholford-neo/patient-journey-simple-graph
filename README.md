@@ -29,3 +29,5 @@ Once you have cloned the repository, follow these steps to build the graph:
 The main class invoked (SyntheaBuilder.kt) takes two arguments:
 1. The number of sample patients to create (REQUIRED)
 2. A random number seed (OPTIONAL)
+
+Creating more than 100,000 patients with this utility is not recommended.  

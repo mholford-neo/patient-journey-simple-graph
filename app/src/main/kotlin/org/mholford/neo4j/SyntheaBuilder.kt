@@ -33,7 +33,13 @@ fun main(args: Array<String>) {
     else ->  System.currentTimeMillis()
   }
   SyntheaBuilder(population.toInt(), seed).apply {
+    var start = System.currentTimeMillis()
     generateData()
+    var curTime = System.currentTimeMillis()
+    println("Done in ${(curTime-start)/1000} seconds")
     transformData("output/import")
+    start = curTime
+    curTime = System.currentTimeMillis()
+    println("Done in ${(curTime-start)/1000} seconds")
   }
 }
