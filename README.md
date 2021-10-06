@@ -23,6 +23,7 @@ Once you have cloned the repository, follow these steps to build the graph:
     ```
     ../../src/main/resources/load.sh
     ```
+  The script loads into a database called `pj100k` by default. Be sure to run Cypher queries against this database.
   
 #### Notes
 
